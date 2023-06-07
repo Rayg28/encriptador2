@@ -1,0 +1,151 @@
+*{
+    background-color: #F3F5FC;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+.logo{
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 10%;
+}
+
+main {
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+.section1{
+    width: 850px;
+    height: 487px;
+}
+
+#caja {
+    margin-top: 0px;
+    margin-left: 10px;
+    border: 5px;
+    font-weight: bold;
+    color: darkblue;
+    text-transform: lowercase;
+    width: 700px;
+    height: 370px;
+    
+}
+::placeholder{color: darkblue;}
+#caja:focus{
+    outline: none;
+}
+
+.aviso{
+    color: rgb(93, 84, 84);
+    font-size: 20px;
+    margin: 0 0 15px 120px;
+    
+}
+.aviso:before{
+    content: "🛈";
+
+}
+
+
+#mensaje-caja{
+    background-color: rgb(255, 255, 255);
+    background-image: url(Muñeco.png);
+    background-size: 236px 204px;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: darkblue;
+    border: 1px;
+    position: fixed;
+    }
+
+
+
+
+#copiar{
+    background-color: rgb(102, 209, 207);
+    color: #F3F5FC;
+    margin: 430px 115px;
+    padding: 10px 35px;
+    border-radius: 10px;
+    font-size: 18px;
+    box-sizing: border-box;
+    border-color: rgb(0, 0, 0);
+    cursor: pointer;
+    position: fixed;
+}
+#copiar:hover{
+    transform: scale(1.2);
+}
+.copiar:hover{
+    transform: scale(1.2);
+}
+
+.botones{
+    margin-top: 18px;
+    display: flex;
+    text-align: center;
+}
+.encriptar{
+    background-color: rgb(50, 132, 119);
+    border: 1px solid darkblue;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+.desencriptar{
+    background: rgb(85, 114, 118);    
+    border: 1px solid darkblue;
+    border-radius: 24px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+}
+.encriptar:hover{
+    transform: scale(1.2);
+}
+.desencriptar:hover{
+    transform: scale(1.2);
+}
+footer{
+    text-align: center;
+    padding: 40px;
+}
+
+@media screen and (max-width:763px){
+    main{
+        display: block;
+    }
+    h1{
+        text-align: center;
+    }
+    .section1{
+        display: inline-block;
+    }
+    .section2,#mensaje-caja{
+        margin-top: 50px;
+        width: 760px;
+    }
+    #copiar{
+        width: auto;
+        margin: 480px 325px;
+    }
+    footer{
+        margin-top: 650px;
+        margin-left: 325px;
+    }
+    #pie{
+        text-align: center;
+        padding: 40px;
+        border: #1d3fb9;
+    }
+}
+
+
